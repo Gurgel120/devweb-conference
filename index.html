@@ -132,58 +132,61 @@
         Preencha os dados abaixo para realizar sua inscrição.
     </p>
 
-    <form class="incricao__formulario">
-
-        <p class="formulario__texto">
-            <label for="nome">Nome:</label>
-
-            <input
+<form class="incricao__formulario">
+    <fieldset>
+        <legend> Informações para inscricao </legend>
+            
+            <p class="formulario__texto">
+                <label for="nome">Nome:</label>
+                
+                <input
                 type="text"
                 id="nome"
                 name="nome"
                 required
-            >
-        </p>
-
-        <p class="formulario__texto">
-            <label for="email">E-mail:</label>
-
-            <input
+                >
+            </p>
+            
+            <p class="formulario__texto">
+                <label for="email">E-mail:</label>
+                
+                <input
                 type="email"
                 id="email"
                 name="email"
                 required
-            >
+                >
         </p>
-
+        
         <p class="formulario__texto">
             <label for="senha">Crie uma senha:</label>
-
+            
             <input
-                type="password"
-                id="senha"
+            type="password"
+            id="senha"
                 name="senha"
                 required
-            >
-        </p>
-
-        <p class="formulario__texto">
-            <input
+                >
+            </p>
+            
+            <p class="formulario__texto">
+                <input
                 type="checkbox"
                 id="novidades"
                 name="novidades"
-            >
-
-            <label for="novidades">
-                Desejo receber novidades sobre o evento
-            </label>
-        </p>
-
+                >
+                
+                <label for="novidades">
+                    Desejo receber novidades sobre o evento
+                </label>
+            </p>
+            
         <button type="submit" class="inscricao__botao">
             Realizar inscrição
         </button>
-
-    </form>
+        
+    </fieldset>
+</form>
 </section>
         <label for="trilhas">Escolha sua trilha favorita</label>
         <select name="trilhas" id="trilhas"          class="trilha">
