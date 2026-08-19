@@ -6,6 +6,209 @@
     <title>DevWeb Conference</title>
 </head>
 <body>
+    <header class="header" id="topo">
+        <h1 class="header__titulo">DevWeb Conference 2026</h1>
+        <p class="header__descricao">
+        Um encontro sobre desenvolvimento web, 
+        interfaces e experiências digitais.
+        </p>
+    </header>
+    <nav class="nav">
+        <a href="#sobre" class="nav__link">Sobre</a>
+        <a href="#palestras" class="nav__link">Palestras</a>
+        <a href="#programacao" class="nav__link">Programação</a>
+        <a href="#inscricao" class="nav__link">Inscrição</a>
+        <a href="login.html" class="nav__link">Login</a>
+    </nav>
+    <main>
+        <section class="sobre" id="sobre">
+            <h2 class="sobre__titulo">Sobre o evento</h2>
+            <p class="sobre__descricao">
+                A DevWeb Conference reúne estudantes e profissionais
+                interessados em desenvolvimento de interfaces web,
+                experiência do usuário e tecnologias para a Web.
+            </p>
+            <p class="sobre__descricao">
+                O evento será realizado em Belo Horizonte e contará
+                com palestras, atividades práticas e momentos de
+                interação entre os participantes.
+            </p>
+            <img class="sobre__imagem" src="https://picsum.photos/id/600/400" alt="Auditório preparado para a DevWeb Conference">
+        </section>
+        <section id="palestras">
+    <h2 class="palestras__titulo">Palestras</h2>
+
+    <article class="palestras__artigo">
+        <h3 class="palestras__subtitulo">Interfaces que realmente funcionam</h3>
+
+        <p class="palestras__texto">
+            Uma conversa sobre princípios para criação
+            de interfaces claras, acessíveis e fáceis de utilizar.
+        </p>
+
+        <p class="palestras__texto">
+            <strong>Palestrante:</strong> Ana Martins
+        </p>
+    </article>
+
+    <article class="palestras__artigo">
+        <h3 class="palestras__subtitulo">HTML além das divs</h3>
+
+        <p class="palestras__texto">
+            Como utilizar HTML semântico para produzir documentos
+            mais organizados, acessíveis e compreensíveis.
+        </p>
+
+        <p class="palestras__texto">
+            <strong>Palestrante:</strong> Bruno Lima
+        </p>
+    </article>
+
+    <article class="palestras__artigo">
+        <h3 class="palestras__subtitulo">O futuro do desenvolvimento web</h3>
+
+        <p class="palestras__texto">
+            Uma discussão sobre tendências, ferramentas
+            e possibilidades para os próximos anos da Web.
+        </p>
+
+        <p class="palestras__texto">
+            <strong>Palestrante:</strong> Carla Souza
+        </p>
+    </article>
+</section>
+<section id="programacao">
+    <h2 class="programacao__titulo">Programação</h2>
+
+    <table class="programacao__tabela">
+        <caption class="programacao__tabela-titulo">Programação da DevWeb Conference 2026</caption>
+
+        <thead class="programacao__tabela-cabecalho">
+            <tr>
+                <th scope="col" class="programacao__tabela-subtitulo">Horário</th>
+                <th scope="col" class="programacao__tabela-subtitulo">Atividade</th>
+                <th scope="col" class="programacao__tabela-subtitulo">Local</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="programacao__texto">08:30</td>
+                <td class="programacao__texto">Credenciamento</td>
+                <td class="programacao__texto">Hall principal</td>
+            </tr>
+
+            <tr>
+                <td class="programacao__texto">09:00</td>
+                <td class="programacao__texto">Abertura</td>
+                <td class="programacao__texto">Auditório</td>
+            </tr>
+
+            <tr>
+                <td class="programacao__texto">10:00</td>
+                <td class="programacao__texto">Interfaces que realmente funcionam</td>
+                <td class="programacao__texto">Auditório</td>
+            </tr>
+
+            <tr>
+                <td class="programacao__texto">11:00</td>
+                <td class="programacao__texto">HTML além das divs</td>
+                <td class="programacao__texto">Auditório</td>
+            </tr>
+
+            <tr>
+                <td class="programacao__texto">14:00</td>
+                <td class="programacao__texto">O futuro do desenvolvimento web</td>
+                <td class="programacao__texto">Auditório</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+<section id="inscricao">
+    <h2 class="inscricao__titulo">Inscrição</h2>
+
+    <p class="inscricao__texto">
+        Preencha os dados abaixo para realizar sua inscrição.
+    </p>
+
+<form class="inscricao__formulario">
+    <fieldset>
+        <legend> Informações para inscricao </legend>
+            
+            <p class="inscricao__formulario-texto">
+                <label for="nome">Nome:</label>
+                
+                <input
+                type="text"
+                id="nome"
+                name="nome"
+                required
+                >
+            </p>
+            
+            <p class="inscricao__formulario-texto">
+                <label for="email">E-mail:</label>
+                
+                <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                >
+        </p>
         
+        <p class="inscricao__formulario-texto">
+            <label for="senha">Crie uma senha:</label>
+            
+            <input
+            type="password"
+            id="senha"
+                name="senha"
+                required
+                >
+            </p>
+            
+            <p class="inscricao__formulario-texto">
+                <input
+                type="checkbox"
+                id="novidades"
+                name="novidades"
+                >
+                
+                <label for="novidades">
+                    Desejo receber novidades sobre o evento
+                </label>
+            </p>
+            
+        <button type="submit" class="inscricao__botao">
+            Realizar inscrição
+        </button>
+        
+    </fieldset>
+</form>
+</section>
+        <label for="trilhas">Escolha sua trilha favorita</label>
+        <select name="trilhas" id="trilhas"          class="trilha">
+            <option value="desenvolvimeto-front-end" class="trilha__opcoes">Desenvolvimento Front-end</option>
+            <option value="ux-e-interfaces"          class="trilha__opcoes">UX e Interfaces</option>
+            <option value="tecnologias-web"          class="trilha__opcoes">Tecnologias Web</option>
+        </select>
+
+
+
+    </main>
+    <footer class="rodape">
+<p class="rodape__titulo">DevWeb Conference 2026</p>
+
+    <p class="rodape__texto">
+        Desenvolvimento de Interfaces Web
+    </p>
+
+    <p class="rodape__link">
+        <a href="#topo">Voltar ao início</a>
+    </p>
+    </footer>   
 </body>
 </html>
